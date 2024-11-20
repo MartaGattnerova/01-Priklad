@@ -1,0 +1,77 @@
+$primary: #f700ff;
+$danger: #ff2200;
+$succes: #00ff37;
+$info: #0022ff;
+
+$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-special: Georgia, serif;
+$spacer: 30px;
+
+.header {
+    border: 5px solid $primary;
+    padding: $spacer;
+    margin-bottom: calc(#{$spacer} / 2);
+
+    &__title {
+        color: $primary;
+        font-family: $font-special;
+        margin: 0;
+    }
+    &__menu {
+        list-style-type: none;
+        padding: 0;
+    }
+    &__link {
+        background-color: $primary;
+        color: white;
+        padding: calc(#{$spacer} / 2);
+        display: block;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+}
+
+a {
+    color: orange;
+
+    &:hover, 
+    &:focus {
+        background-color: orange;
+        color: white;
+    }
+    &:visited {
+        color: grey;
+    }
+    &:active {
+        background-color: blue;
+    }
+}
+
+button {
+    background-color: $primary;
+    color:white;
+    font-family: $font-special;
+    padding: calc(#{$spacer} / 2);
+}
+body {
+    font-family: $font-base;
+}
+footer {
+    margin-top: $spacer;
+    padding: calc(#{$spacer} / 2);
+    background-color: black;
+    color: white;
+}
+@media (min-width: 700px) {
+    footer {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 900px) {
+    footer {
+        background-color: greenyellow;
+    }
+}
